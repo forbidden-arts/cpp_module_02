@@ -6,11 +6,11 @@
 #    By: dpalmer <dpalmer@student.hive.fi>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/09 13:13:15 by dpalmer           #+#    #+#              #
-#    Updated: 2023/10/09 13:32:51 by dpalmer          ###   ########.fr        #
+#    Updated: 2023/10/09 14:38:50 by dpalmer          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME		=	ex00
+NAME		=	ex03
 
 CC			=	c++
 CFLAGS		=	-Wall -Werror -Wextra -std=c++98 #-fsanitize=thread
@@ -27,7 +27,8 @@ CYAN = \033[0;96m
 #Sources
 
 SRC_FILES	=	main	\
-				Fixed
+				Fixed	\
+				Point
 
 SRC 		= 	$(addprefix $(SRC_DIR), $(addsuffix .cpp, $(SRC_FILES)))
 OBJ 		= 	$(addprefix $(OBJ_DIR), $(addsuffix .o, $(SRC_FILES)))
