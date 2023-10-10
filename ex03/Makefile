@@ -6,7 +6,7 @@
 #    By: dpalmer <dpalmer@student.hive.fi>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/09 13:13:15 by dpalmer           #+#    #+#              #
-#    Updated: 2023/10/09 14:38:50 by dpalmer          ###   ########.fr        #
+#    Updated: 2023/10/10 10:02:25 by dpalmer          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,7 +28,8 @@ CYAN = \033[0;96m
 
 SRC_FILES	=	main	\
 				Fixed	\
-				Point
+				Point	\
+				bsp
 
 SRC 		= 	$(addprefix $(SRC_DIR), $(addsuffix .cpp, $(SRC_FILES)))
 OBJ 		= 	$(addprefix $(OBJ_DIR), $(addsuffix .o, $(SRC_FILES)))

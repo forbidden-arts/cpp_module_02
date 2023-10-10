@@ -6,7 +6,7 @@
 /*   By: dpalmer <dpalmer@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/09 14:33:26 by dpalmer           #+#    #+#             */
-/*   Updated: 2023/10/09 14:37:48 by dpalmer          ###   ########.fr       */
+/*   Updated: 2023/10/10 10:00:05 by dpalmer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ static Fixed	area(Point const a, Point const b, Point const c)
 			) / 2);
 }
 
-bool bsp(Point const a, Point const b, Point const c, Point const point)
+bool	bsp(Point const a, Point const b, Point const c, Point const point)
 {
 	Fixed	abcArea = abs(area(a, b, c));
 	Fixed	pointAB = abs(area(point, a, b));
